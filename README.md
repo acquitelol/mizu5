@@ -12,4 +12,4 @@ The final goal is to play the Mizu5 cutscene as a video on the calculator.
 $ make
 ```
 
-(Assuming you have libfxcg and the sh3eb-elf toolchain)
+(Assuming you have `libfxcg`, `sh3eb-elf-gcc`, `ffmpeg`, and `mkg3a` installed)
