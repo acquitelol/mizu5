@@ -9,7 +9,7 @@ The final goal is to play the Mizu5 cutscene as a video on the calculator.
 ### How to build?
 
 ```console
-    $ make
+$ make
 ```
 
 (Assuming you have libfxcg and the sh3eb-elf toolchain)
