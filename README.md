@@ -18,4 +18,4 @@ $ make
 
 (Assuming you have `libfxcg`, `sh3eb-elf-gcc`, `ffmpeg`, and `mkg3a` installed)
 <br />
-Afterwards, import the `mizu5.g3a` and `mizu5.bin` files to your calculator
+Afterwards, import the `mizu5.g3a` and `mizu5.bin` files to your calculator.

@@ -3,10 +3,10 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 #define CALC_WIDTH 384
 #define CALC_HEIGHT 216
+// #define RAM_SIZE 65536
 #define FILE_PATH "\\\\fls0\\mizu5.bin"
 
 typedef enum {

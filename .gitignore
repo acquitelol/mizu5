@@ -1,3 +1,4 @@
 *.g3a
 .DS_Store
 *.bin
+tmp
