@@ -10,7 +10,7 @@ int main(void) {
     Clear_Display();
 
     EnableStatusArea(STATUS_ENABLE);
-    DefineStatusAreaFlags(3, SAF_BATTERY | SAF_TEXT, 0, 0);
+    DefineStatusAreaFlags(3, SAF_BATTERY | SAF_ALPHA_SHIFT | SAF_TEXT, 0, 0);
 
     Bdisp_EnableColor(1); // Enable 16-bit color mode
     Bfile_StrToName_ncpy(fileNameBuffer, FILE_PATH, sizeof(FILE_PATH));
@@ -45,8 +45,10 @@ int main(void) {
             *p++ = (color >> 8) | (color << 8); // Reverse byte order
         }
 
-        // PrintXY(2, 0, "\0\0ominous bells", 0x20, 0);
-        DefineStatusMessage("ominous bells", 1, 0, 0);
+        DefineStatusMessage("I can't sing with you all anymore.", 1, 0, 0);
+        // 03A8 specifies that the GB18030 standard is being used
+        // the other bytes correspond to "ごめんね。。。"
+        PrintXY(1, 1, "\x03\xA8\xa4\xb4\xa4\xe1\xa4\xf3\xa4\xcd\xa1\xa3\xa1\xa3\xa1\xa3", 0, 0);
         DisplayStatusArea();
         Bdisp_PutDisp_DD();
     }
