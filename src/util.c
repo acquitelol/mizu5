@@ -10,6 +10,6 @@ void Clear_Display() {
     Bdisp_PutDisp_DD();
 }
 
-void Locate_OS(int x, int y) {
+inline void Locate_OS(int x, int y) {
     locate_OS(x, y);
 }

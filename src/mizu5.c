@@ -22,7 +22,7 @@ int main() {
         if (!firstRender) GetKey(&key);
 
         firstRender = false;
-        unsigned short *p = GetVRAMAddress();;
+        unsigned short *p = GetVRAMAddress();
 
         for (int i = 0; i < CALC_WIDTH * CALC_HEIGHT; i++) {
             unsigned short color = (tmp_mizu5_bin[2 * i] << 8) | tmp_mizu5_bin[2 * i + 1];
